@@ -10,8 +10,10 @@ textarea {
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
-  width: 100%; /* Make sure the textarea fills the column */
-  vertical-align: middle; /* Center the textarea vertically */
+  width: 100%;
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .description {
@@ -20,11 +22,12 @@ textarea {
 
 .time-block {
   border-radius: 15px;
-  padding: 10px 0; /* Added vertical padding for better spacing */
+  padding: 10px 0;
 }
 
 .row {
-  border-top: 1px solid white;
+  border-bottom: 1px solid #000;
+  position: relative;
 }
 
 .hour {
@@ -38,14 +41,26 @@ textarea {
   color: white;
 }
 
+.past textarea {
+  background-color: #d3d3d3;
+}
+
 .present {
   background-color: #ff6961;
   color: white;
 }
 
+.present textarea {
+  background-color: #ff6961;
+}
+
 .future {
   background-color: #77dd77;
   color: white;
+}
+
+.future textarea {
+  background-color: #77dd77;
 }
 
 .saveBtn {
@@ -57,7 +72,7 @@ textarea {
 }
 
 .saveBtn:hover {
-  background-color: #0487a6;  /* A slightly darker shade for the hover effect */
+  background-color: #04a0c0;
 }
 
 .saveBtn i:hover {
@@ -67,5 +82,9 @@ textarea {
 
 textarea:focus {
   outline: none;
-  box-shadow: 0 0 3px #06aed5;  /* A subtle blue glow when the textarea is in focus */
+  box-shadow: 0 0 3px #06aed5;
+}
+
+.col-md-10 {
+  padding: 0;
 }
