@@ -1,90 +1,104 @@
+/* Global styles */
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-family: 'Open Sans', sans-serif; /* Setting the global font */
+  font-size: 16px; /* Base font size for the body */
 }
 
+/* Styling for all textarea elements */
 textarea {
   background: transparent;
-  border: none;
-  resize: none;
-  color: #000000;
-  border-left: 1px solid black;
+  border: none; /* Remove default borders */
+  resize: none; /* Disable resizing of textarea */
+  color: #000000; /* Text color */
+  border-left: 1px solid black; /* Left border to visually separate from adjacent elements */
   padding: 10px;
-  width: 100%;
-  vertical-align: middle;
-  font-size: 14px;
-  line-height: 1.5;
+  width: 100%; /* Make sure the textarea fills the column */
+  vertical-align: middle; /* Center the textarea vertically */
+  font-size: 14px; /* Adjusted font size for textareas */
+  line-height: 1.5; /* Line height for better readability */
 }
 
+/* Ensure that line breaks and spaces are preserved in description */
 .description {
   white-space: pre-wrap;
 }
 
+/* Styling for time blocks */
 .time-block {
-  border-radius: 15px;
-  padding: 10px 0;
+  border-radius: 15px; /* Rounded corners */
+  padding: 10px 0; /* Vertical padding */
 }
 
+/* Styling for each row */
 .row {
-  border-bottom: 1px solid #000;
-  position: relative;
+  border-bottom: 1px solid #000; /* Bottom border */
+  position: relative; /* To allow absolute positioning within the row if needed */
 }
 
+/* Hour column styling */
 .hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
+  background-color: #ffffff; /* Background color */
+  color: #000000; /* Text color */
+  border-top: 1px dashed #000000; /* Top border with a dashed line */
 }
 
+/* Past hour styling */
 .past {
-  background-color: #d3d3d3;
+  background-color: #d3d3d3; /* Gray background color for past hours */
   color: white;
 }
 
 .past textarea {
-  background-color: #d3d3d3;
+  background-color: #d3d3d3; /* Ensure that the textarea background matches the row background */
 }
 
+/* Current hour styling */
 .present {
-  background-color: #ff6961;
+  background-color: #ff6961; /* Red background color for current hour */
   color: white;
 }
 
 .present textarea {
-  background-color: #ff6961;
+  background-color: #ff6961; /* Ensure that the textarea background matches the row background */
 }
 
+/* Future hour styling */
 .future {
-  background-color: #77dd77;
+  background-color: #77dd77; /* Green background color for future hours */
   color: white;
 }
 
 .future textarea {
-  background-color: #77dd77;
+  background-color: #77dd77; /* Ensure that the textarea background matches the row background */
 }
 
+/* Save button styling */
 .saveBtn {
   border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06aed5;
-  color: white;
+  border-top-right-radius: 15px; /* Rounded top-right corner */
+  border-bottom-right-radius: 15px; /* Rounded bottom-right corner */
+  background-color: #06aed5; /* Primary color for save button */
+  color: white; /* Text/icon color */
 }
 
+/* Hover effect for save button */
 .saveBtn:hover {
-  background-color: #04a0c0;
+  background-color: #04a0c0; /* Darker shade when hovered */
 }
 
+/* Hover effect for the icon inside the save button */
 .saveBtn i:hover {
-  font-size: 20px;
-  transition: all 0.3s ease-in-out;
+  font-size: 20px; /* Increase icon size on hover */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
 }
 
+/* Styling for focused textarea */
 textarea:focus {
-  outline: none;
-  box-shadow: 0 0 3px #06aed5;
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 3px #06aed5; /* Blue glow when the textarea is in focus */
 }
 
+/* Adjustments for medium devices */
 .col-md-10 {
-  padding: 0;
+  padding: 0; /* Remove padding */
 }
